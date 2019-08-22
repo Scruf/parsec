@@ -1,0 +1,13 @@
+Before running the application make sure that you have virtualenv installed.
+The script once run should install all of the requirements required and start the server
+Application was written using Django.
+/applicants, /applications, /college, /backup were done and treated as a separate applications in django.
+The reason behind this thinking is that in a future we would want to build more on top of this existing applications
+For database I went with default .sqlite database for the purpose of testing. In future we can  use any datasource we want.
+After examining the requirements we went with one to many relationships between college and applicants. Since college can have many applicants
+Folder structure
+    applicants -> Holds all of the logic for /applicants endpoints
+    applications -> Holds all of the logic for /applications endpoints
+    backup -> Holds all of the logic for /backup endpoints
+    utils -> Was created to hold helpern functions such as error and success messages
+    
